@@ -690,7 +690,6 @@ img{
     position: relative;
     overflow: hidden;
     height: 294px;
-    /* transition: transform 250ms var(--timing-function); */
 }
 
 .portfolio-item-text{
@@ -742,6 +741,8 @@ img{
     transform: scale(1);
     transform: translate(-50%, -50%);
     transition: transform 250ms var(--timing-function);
+
+    padding: 40px;
 }
 
 .modal-close {
@@ -762,4 +763,48 @@ img{
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+}
+
+
+/* <!-- FORMA --> */
+
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--secondary-title-color);
+    margin-bottom: 12px;
+}
+
+.modal-form-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    /* outline: none; */
+}
+
+.modal-form-input:last-child{
+    height: 120px;
+}
+
+.modal-form-text{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 1);
+    margin-bottom: 4px;
+    
+}
+
+.check-icon{
+    fill: var(--main-title-color);
 }
