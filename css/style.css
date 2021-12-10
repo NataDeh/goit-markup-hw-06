@@ -472,7 +472,6 @@ img{
 
 .footer-container{
     display: flex;
-    /* justify-content: baseline; */
     align-items: baseline;
 }
 .logo-footer{
@@ -823,6 +822,11 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: fill 250ms var(--timing-function);
+}
+
+.modal-close-icon:hover{
+    fill: var(--accent-hover-color);
 }
 
 .is-hidden {
@@ -833,6 +837,8 @@ img{
 
 
 /* <!-------- FORMA --------> */
+
+
 
 .modal-title{
     font-weight: 700;
@@ -905,10 +911,36 @@ img{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.check-item{
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+}
+
+.check-icon{
+    fill: #ffffff;
+}
+
+.modal-check:checked + .check-text .check-item{
+    background-color: var(--accent-hover-color);
+    border: none;
 }
 
 .contract-link{
     color: rgba(33, 150, 243, 1);
+    margin-left: 5px;
 
 }
 
