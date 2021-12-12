@@ -474,6 +474,10 @@ img{
     display: flex;
     align-items: baseline;
 }
+
+.footer-firstblock{
+    flex-grow: 1;
+}
 .logo-footer{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -594,6 +598,7 @@ img{
     letter-spacing: 0.03em;
     color: var(--main-title-color);
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .subscribe-input{
@@ -609,7 +614,6 @@ img{
     font-weight: 500;
     font-size: 16px;
     outline: none;
-    margin-top: 20px;
     transition: border-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
 }
@@ -819,6 +823,7 @@ img{
     position: absolute;
     top: 8px;
     right: 8px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -850,26 +855,30 @@ img{
     margin-bottom: 12px;
 }
 
+.modal-field{
+    margin-bottom: 10px;
+}
+
 .modal-form-text{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 1);
-    margin-bottom: 4px;
 }
 
 .input-wrap{
     position: relative;
-    margin-bottom: 10px;
+    margin-top: 4px;
 }
 
 .modal-form-input{
+    display: block;
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 10px;
     color: rgba(33, 33, 33, 0.2);
     font-weight: 500;
